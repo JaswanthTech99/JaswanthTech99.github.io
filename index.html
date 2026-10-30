@@ -2,60 +2,377 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jaswanth Kumar Medisetti – Full Stack .NET Engineer</title>
-<meta name="description" content="Portfolio of Jaswanth Kumar Medisetti, Full Stack .NET Engineer (C#, ASP.NET Core, Angular, PostgreSQL, AWS). Full site launching shortly.">
-<meta name="robots" content="noindex">
-<meta name="color-scheme" content="dark">
-<style>
-  :root { --bg: #07080d; --ink: #f5f7ff; --muted: #9aa3b8; --a1: #6366f1; --a2: #22d3ee; --a3: #a855f7; }
-  * { box-sizing: border-box; margin: 0; }
-  html, body { height: 100%; }
-  body {
-    display: grid; place-items: center; padding: 24px;
-    background: var(--bg); color: var(--ink); overflow: hidden;
-    font-family: ui-sans-serif, "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
-  }
-  .aurora { position: fixed; inset: -20%; filter: blur(70px); opacity: .55; pointer-events: none; }
-  .aurora span { position: absolute; width: 42vmax; height: 42vmax; border-radius: 50%; animation: drift 18s ease-in-out infinite alternate; }
-  .aurora span:nth-child(1) { background: radial-gradient(circle, var(--a1), transparent 65%); top: 10%; left: 12%; }
-  .aurora span:nth-child(2) { background: radial-gradient(circle, var(--a2), transparent 65%); bottom: 8%; right: 10%; animation-delay: -6s; }
-  .aurora span:nth-child(3) { background: radial-gradient(circle, var(--a3), transparent 65%); top: 40%; left: 45%; animation-delay: -11s; opacity: .7; }
-  @keyframes drift { to { transform: translate(6vmax, -4vmax) scale(1.12); } }
-  .grid { position: fixed; inset: 0; pointer-events: none; opacity: .35;
-    background-image: linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
-    background-size: 56px 56px; mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%); }
-  main {
-    position: relative; width: min(560px, 100%); padding: 40px 32px; text-align: center;
-    border-radius: 24px; border: 1px solid rgba(255,255,255,.1);
-    background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-    backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
-    box-shadow: 0 30px 80px -30px rgba(0,0,0,.8), inset 0 1px 0 rgba(255,255,255,.08);
-    animation: rise .9s cubic-bezier(.2,.8,.2,1) both;
-  }
-  @keyframes rise { from { opacity: 0; transform: translateY(16px) scale(.98); } }
-  .pill { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px;
-    font-size: 13px; color: var(--muted); border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.04); }
-  .dot { width: 8px; height: 8px; border-radius: 50%; background: #34d399; box-shadow: 0 0 0 0 rgba(52,211,153,.6); animation: ping 1.8s infinite; }
-  @keyframes ping { 70% { box-shadow: 0 0 0 8px rgba(52,211,153,0); } 100% { box-shadow: 0 0 0 0 rgba(52,211,153,0); } }
-  h1 { margin-top: 20px; font-size: clamp(30px, 6vw, 44px); line-height: 1.08; letter-spacing: -.02em; }
-  h1 em { font-style: normal; background: linear-gradient(90deg, var(--a2), var(--a1), var(--a3)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-  p { margin-top: 12px; color: var(--muted); line-height: 1.6; }
-  a.btn { display: inline-flex; margin-top: 26px; padding: 12px 20px; border-radius: 12px; color: #fff; text-decoration: none; font-weight: 600;
-    background: linear-gradient(90deg, var(--a1), var(--a3)); box-shadow: 0 10px 30px -10px rgba(99,102,241,.7); transition: transform .2s, box-shadow .2s; }
-  a.btn:hover { transform: translateY(-2px); box-shadow: 0 16px 36px -12px rgba(99,102,241,.9); }
-  a.btn:focus-visible { outline: 2px solid var(--a2); outline-offset: 3px; }
-  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jaswanth Kumar Medisetti – Full Stack .NET Engineer | C#, Angular, PostgreSQL, AWS</title>
+<meta name="description" content="Jaswanth Kumar Medisetti – Full Stack .NET Engineer in Hyderabad with 4+ years building C# / ASP.NET Core APIs, Angular apps, PostgreSQL data layers and AI-assisted features.">
+<link rel="canonical" href="https://jaswanth-kumar-medisetti.pages.dev/">
+<meta name="author" content="Jaswanth Kumar Medisetti">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#05060b" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Jaswanth Kumar Medisetti – Full Stack .NET Engineer">
+<meta property="og:description" content="C#, ASP.NET Core, Angular, PostgreSQL, AWS and AI-assisted development. 4+ years, Hyderabad.">
+<meta property="og:url" content="https://jaswanth-kumar-medisetti.pages.dev/">
+<meta property="og:image" content="https://jaswanth-kumar-medisetti.pages.dev/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/Geist-VF.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/styles.css?v=preview1">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfilePage","mainEntity":{"@type":"Person","name":"Jaswanth Kumar Medisetti","jobTitle":"Full Stack .NET Engineer","worksFor":{"@type":"Organization","name":"Tilli Software"},"address":{"@type":"PostalAddress","addressLocality":"Hyderabad","addressCountry":"IN"},"email":"mailto:jaswanthkumartech@gmail.com","sameAs":["https://www.linkedin.com/in/jaswanth-kumar-medisetti-83159b236","https://github.com/JaswanthTech99"],"knowsAbout":["C#",".NET","ASP.NET Core","Angular","TypeScript","PostgreSQL","SQL Server","AWS","Prompt engineering","Claude"]}}
+</script>
 </head>
 <body>
-  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
-  <div class="grid" aria-hidden="true"></div>
-  <main>
-    <span class="pill"><span class="dot" aria-hidden="true"></span>Portfolio launching shortly</span>
-    <h1>Jaswanth Kumar <em>Medisetti</em></h1>
-    <p>Full Stack .NET Engineer · C#, ASP.NET Core, Angular, PostgreSQL, AWS and AI-assisted development.<br>The full portfolio is being deployed. Check back in a little while.</p>
-    <a class="btn" href="mailto:jaswanthkumartech@gmail.com">Say hello</a>
-  </main>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="bg" aria-hidden="true">
+  <div class="bg-aurora"><span></span><span></span><span></span></div>
+  <div class="bg-grid"></div>
+  <div class="bg-noise"></div>
+</div>
+
+<header class="nav-wrap">
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="#top" aria-label="Jaswanth Kumar Medisetti, home"><span class="brand-mark">JK</span><span class="brand-name">Jaswanth <small>Medisetti</small></span></a>
+    <ul class="nav-links">
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#nia">AI work</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#life">Life</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="icon-btn" href="https://www.linkedin.com/in/jaswanth-kumar-medisetti-83159b236" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon"><use href="assets/img/sprite.svg#b-linkedin"/></svg></a>
+      <a class="icon-btn" href="https://github.com/JaswanthTech99" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon"><use href="assets/img/sprite.svg#b-github"/></svg></a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="hero-paths" aria-hidden="true">
+      <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="heroStroke" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#8b93ff" stop-opacity="0"/>
+            <stop offset=".5" stop-color="#8b93ff" stop-opacity=".55"/>
+            <stop offset="1" stop-color="#38d9f5" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <path pathLength="1" stroke-width="1" d="M-80 620 C 220 520, 380 700, 640 560 S 1040 420, 1280 520"/>
+        <path pathLength="1" stroke-width="1.2" d="M-80 560 C 200 470, 420 640, 660 500 S 1020 380, 1280 470"/>
+        <path pathLength="1" stroke-width=".8" d="M-80 680 C 260 600, 400 760, 700 620 S 1080 500, 1280 600"/>
+        <path pathLength="1" stroke-width="1" d="M-80 500 C 240 420, 440 580, 680 440 S 1000 330, 1280 420"/>
+        <path pathLength="1" stroke-width=".7" d="M-80 740 C 280 660, 460 800, 720 680 S 1100 560, 1280 650"/>
+        <path pathLength="1" stroke-width="1.1" d="M-80 440 C 260 380, 460 520, 700 380 S 1040 280, 1280 360"/>
+        <path pathLength="1" stroke-width=".9" d="M-80 380 C 280 330, 480 460, 720 320 S 1060 230, 1280 300"/>
+        <path pathLength="1" stroke-width=".6" d="M-80 320 C 300 280, 500 400, 740 260 S 1080 180, 1280 240"/>
+      </svg>
+    </div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="status-pill"><span class="pulse-dot" aria-hidden="true"></span>Open to Full Stack .NET roles · Hyderabad · Hybrid / Remote</span>
+        <h1 class="hero-name" aria-label="Jaswanth Kumar Medisetti">
+          <span class="line"><span class="word"><span class="ch c1">J</span><span class="ch c2">a</span><span class="ch c3">s</span><span class="ch c4">w</span><span class="ch c5">a</span><span class="ch c6">n</span><span class="ch c7">t</span><span class="ch c8">h</span></span> <span class="word"><span class="ch c9">K</span><span class="ch c10">u</span><span class="ch c11">m</span><span class="ch c12">a</span><span class="ch c13">r</span></span></span>
+          <span class="line line-2"><span class="word"><span class="ch c14">M</span><span class="ch c15">e</span><span class="ch c16">d</span><span class="ch c17">i</span><span class="ch c18">s</span><span class="ch c19">e</span><span class="ch c20">t</span><span class="ch c21">t</span><span class="ch c22">i</span></span></span>
+        </h1>
+        <p class="hero-role">Full Stack .NET Engineer <span class="rotator">C# · Angular · PostgreSQL</span></p>
+        <p class="hero-sub">4+ years building with C#, ASP.NET Core, Angular, PostgreSQL and AWS. Today I ship features on the Nudge customer-engagement platform at Tilli Software, and I build AI features with Claude.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#experience">View experience <svg class="icon arrow"><use href="assets/img/sprite.svg#i-arrow-up-right"/></svg></a>
+          <a class="btn btn-ghost" href="#certifications"><svg class="icon"><use href="assets/img/sprite.svg#i-award"/></svg>Certifications</a>
+        </div>
+        <div class="hero-social">
+          <a class="icon-btn" href="mailto:jaswanthkumartech@gmail.com" aria-label="Email"><svg class="icon"><use href="assets/img/sprite.svg#i-mail"/></svg></a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/jaswanth-kumar-medisetti-83159b236" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon"><use href="assets/img/sprite.svg#b-linkedin"/></svg></a>
+          <a class="icon-btn" href="https://github.com/JaswanthTech99" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon"><use href="assets/img/sprite.svg#b-github"/></svg></a>
+        </div>
+      </div>
+      <div class="orbit" aria-hidden="true">
+        <div class="ring ring-2">
+          <span class="planet"><span><svg class="icon"><use href="assets/img/sprite.svg#b-aws"/></svg></span></span>
+          <span class="planet"><span><svg class="icon"><use href="assets/img/sprite.svg#b-claude"/></svg></span></span>
+          <span class="planet"><span><svg class="icon"><use href="assets/img/sprite.svg#b-apachekafka"/></svg></span></span>
+          <span class="planet"><span><svg class="icon"><use href="assets/img/sprite.svg#b-githubactions"/></svg></span></span>
+          <span class="planet"><span><svg class="icon"><use href="assets/img/sprite.svg#b-postman"/></svg></span></span>
+          <span class="planet"><span><svg class="icon"><use href="assets/img/sprite.svg#b-git"/></svg></span></span>
+        </div>
+        <div class="ring ring-1">
+          <span class="planet"><span><svg class="icon"><use href="assets/img/sprite.svg#b-dotnet"/></svg></span></span>
+          <span class="planet"><span><svg class="icon"><use href="assets/img/sprite.svg#b-angular"/></svg></span></span>
+          <span class="planet"><span><svg class="icon"><use href="assets/img/sprite.svg#b-postgresql"/></svg></span></span>
+          <span class="planet"><span><svg class="icon"><use href="assets/img/sprite.svg#b-typescript"/></svg></span></span>
+        </div>
+        <div class="orbit-core"><span>JK</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" aria-label="Highlights">
+    <div class="container stats-grid">
+      <div class="card stat"><span class="stat-value">4<span class="unit">+</span></span><span class="stat-label">years building production .NET software</span></div>
+      <div class="card stat"><span class="stat-value">1,100<span class="unit">+</span></span><span class="stat-label">commits authored on the Nudge platform</span></div>
+      <div class="card stat"><span class="stat-value">2</span><span class="stat-label">legacy Web Forms apps moved to Angular + ASP.NET Core</span></div>
+      <div class="card stat"><span class="stat-value">4</span><span class="stat-label">certificates earned, 5 AI courses in progress</span></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow"><span class="num">01</span> Experience</span>
+        <h2 class="section-title">Where I've been <span class="serif gradient-text">building</span></h2>
+      </div>
+      <ol class="timeline" role="list">
+        <li class="tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <article class="card tl-card spotlight">
+            <div class="tl-head">
+              <span class="org-logo tilli" aria-hidden="true">TS</span>
+              <div>
+                <h3 class="tl-title">Full Stack Engineer</h3>
+                <p class="tl-org">Tilli Software <span class="muted">· Utilli Software Technologies</span></p>
+              </div>
+              <div class="tl-meta"><span class="date-pill live">Jun 2025 – Present</span><span class="loc">Hyderabad, India</span></div>
+            </div>
+            <p class="tl-context"><strong>Nudge</strong> – a multi-channel customer-engagement platform: an ASP.NET Core (.NET 8) API, an Angular portal, PostgreSQL and AWS.</p>
+            <ul class="bullets">
+              <li><strong>Full-stack delivery:</strong> authored 1,100+ commits across the Angular portal, ASP.NET Core API, business layer and EF Core / PostgreSQL data layer.</li>
+              <li><strong>Angular upgrade:</strong> moved the portal to Angular 21.</li>
+              <li><strong>Nia AI assistant:</strong> built an in-app, tool-calling assistant end to end, then rewrote it from a Python sidecar into C# inside the .NET 8 API (feature branch).</li>
+              <li><strong>Translation:</strong> integrated Google Cloud Translation for multi-language email templates, with a per-account language gate, usage metering and 13 xUnit tests.</li>
+              <li><strong>AI cost tracking:</strong> added a per-call token-usage ledger for the Claude-powered template generator.</li>
+            </ul>
+            <div class="tags"><span class="tag">C#</span><span class="tag">.NET 8</span><span class="tag">ASP.NET Core</span><span class="tag">Angular 21</span><span class="tag">TypeScript</span><span class="tag">PostgreSQL</span><span class="tag">EF Core</span><span class="tag">AWS</span><span class="tag">xUnit</span></div>
+          </article>
+        </li>
+        <li class="tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <article class="card tl-card spotlight">
+            <div class="tl-head">
+              <span class="org-logo primera" aria-hidden="true">PM</span>
+              <div>
+                <h3 class="tl-title">Software Developer (Full Stack .NET)</h3>
+                <p class="tl-org">PrimEra Medical Technologies <span class="muted">· client: Prime Healthcare</span></p>
+              </div>
+              <div class="tl-meta"><span class="date-pill">May 2022 – Jun 2025</span><span class="loc">Hyderabad, India</span></div>
+            </div>
+            <p class="tl-context">Healthcare auditing apps for Prime Healthcare, a U.S. health system with 44 hospitals across 14 states.</p>
+            <ul class="bullets">
+              <li><strong>Coder Auditor:</strong> migrated the module from ASP.NET Web Forms to Angular and ASP.NET Core Web API with Dapper, overhauling the UI and enabling real-time tracking and reporting.</li>
+              <li><strong>Retro Auditor:</strong> upgraded the module to Angular and ASP.NET Core Web API on SQL Server, improving maintainability.</li>
+              <li><strong>APIs &amp; SQL:</strong> built REST APIs, batch jobs and SQL Server stored procedures; shipped through Azure DevOps CI/CD.</li>
+              <li><strong>Growth:</strong> joined as Associate Software Engineer (ADO.NET, Web Forms, jQuery ASMX services) and moved to Software Engineer.</li>
+            </ul>
+            <div class="tags"><span class="tag">C#</span><span class="tag">ASP.NET Core Web API</span><span class="tag">Angular</span><span class="tag">Dapper</span><span class="tag">SQL Server</span><span class="tag">Azure DevOps</span><span class="tag">Postman</span></div>
+          </article>
+        </li>
+        <li class="tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <article class="card tl-card spotlight">
+            <div class="tl-head">
+              <span class="org-logo edu" aria-hidden="true">BSc</span>
+              <div>
+                <h3 class="tl-title">Bachelor of Science (B.Sc.)</h3>
+                <p class="tl-org">Pithapur Rajah's Government College, Kakinada <span class="muted">· Adikavi Nannaya University</span></p>
+              </div>
+              <div class="tl-meta"><span class="date-pill">Jun 2018 – Nov 2021</span><span class="loc">Kakinada, India</span></div>
+            </div>
+          </article>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- NIA / AI -->
+  <section id="nia" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow"><span class="num">02</span> AI engineering</span>
+        <h2 class="section-title">Nia – an assistant <span class="serif gradient-text">inside</span> Nudge</h2>
+        <p class="section-lede">A chat assistant and tool-calling agent built into the Nudge portal. It explains the product, looks up the signed-in user's data, opens pages and runs confirmed actions, always acting as that user.</p>
+      </div>
+      <div class="ai-grid">
+        <article class="card ai-card spotlight">
+          <span class="badge-icon"><svg class="icon"><use href="assets/img/sprite.svg#i-workflow"/></svg></span>
+          <h3>Three-step agent</h3>
+          <ul>
+            <li><svg class="icon"><use href="assets/img/sprite.svg#i-check"/></svg>Triage works out the intent; an actor calls tools (max 6 steps); a reply step keeps only facts backed by tool results.</li>
+            <li><svg class="icon"><use href="assets/img/sprite.svg#i-check"/></svg>Model fallback chain with retries and timeouts.</li>
+            <li><svg class="icon"><use href="assets/img/sprite.svg#i-check"/></svg>Rewritten from a Python sidecar into C# inside the .NET 8 API.</li>
+          </ul>
+        </article>
+        <article class="card ai-card spotlight">
+          <span class="badge-icon"><svg class="icon"><use href="assets/img/sprite.svg#i-brain-circuit"/></svg></span>
+          <h3>Prompt engineering</h3>
+          <ul>
+            <li><svg class="icon"><use href="assets/img/sprite.svg#i-check"/></svg>A separate system prompt for each step, with grounding rules and prompt-budget caps.</li>
+            <li><svg class="icon"><use href="assets/img/sprite.svg#i-check"/></svg>BM25 search over the product's help content, so answers quote real docs.</li>
+            <li><svg class="icon"><use href="assets/img/sprite.svg#i-check"/></svg>Common questions answered without calling the model.</li>
+          </ul>
+        </article>
+        <article class="card ai-card spotlight">
+          <span class="badge-icon"><svg class="icon"><use href="assets/img/sprite.svg#i-shield-check"/></svg></span>
+          <h3>Safe by design</h3>
+          <ul>
+            <li><svg class="icon"><use href="assets/img/sprite.svg#i-check"/></svg>Every tool call runs as the signed-in user, so normal permissions still apply.</li>
+            <li><svg class="icon"><use href="assets/img/sprite.svg#i-check"/></svg>Destructive actions need confirmation; per-user rate limits.</li>
+            <li><svg class="icon"><use href="assets/img/sprite.svg#i-check"/></svg>Live streamed replies in an accessible Angular chat panel.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="now-card" style="margin-top:16px">
+        <span class="icon-wrap"><svg class="icon"><use href="assets/img/sprite.svg#b-claude"/></svg></span>
+        <p>I use <strong>Claude Code</strong> day to day on the Nudge codebase (22 sessions so far), including the Nia rewrite and the Angular 21 upgrade.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow"><span class="num">03</span> Certifications</span>
+        <h2 class="section-title">Credentials &amp; <span class="serif gradient-text">learning</span></h2>
+        <p class="section-lede">Open a certificate to see it full size, or verify it with the issuer.</p>
+      </div>
+      <div class="cert-grid">
+        <article class="card cert-card spotlight">
+          <a class="cert-thumb" href="assets/img/certs/ibm-genai-essentials.webp" target="_blank" rel="noopener"><img src="assets/img/certs/ibm-genai-essentials-thumb.webp" width="720" height="550" loading="lazy" alt="IBM SkillsBuild badge certificate: Generative AI Essentials – Using LLMs to Work with Data"></a>
+          <div class="cert-body">
+            <span class="cert-issuer"><span class="dot"></span>IBM SkillsBuild · Credly</span>
+            <h3 class="cert-title">Generative AI Essentials: Using LLMs to Work with Data</h3>
+            <div class="cert-foot"><span class="cert-date">Aug 2026</span><a class="link-arrow" href="https://www.credly.com/go/zuol0OLL" target="_blank" rel="noopener">Verify <svg class="icon"><use href="assets/img/sprite.svg#i-arrow-up-right"/></svg></a></div>
+          </div>
+        </article>
+        <article class="card cert-card spotlight">
+          <a class="cert-thumb" href="assets/img/certs/ibm-aicte-data-analytics-ai.webp" target="_blank" rel="noopener"><img src="assets/img/certs/ibm-aicte-data-analytics-ai-thumb.webp" width="720" height="445" loading="lazy" alt="Completion certificate: AICTE | IBM SkillsBuild Academic Internship – Data Analytics with AI"></a>
+          <div class="cert-body">
+            <span class="cert-issuer"><span class="dot"></span>AICTE × IBM SkillsBuild</span>
+            <h3 class="cert-title">Academic Internship – Data Analytics with AI</h3>
+            <div class="cert-foot"><span class="cert-date">Aug 2026</span><a class="link-arrow" href="assets/docs/certs/ibm-aicte-data-analytics-ai.pdf" target="_blank" rel="noopener">PDF <svg class="icon"><use href="assets/img/sprite.svg#i-arrow-up-right"/></svg></a></div>
+          </div>
+        </article>
+        <article class="card cert-card spotlight">
+          <a class="cert-thumb" href="assets/img/certs/thiranex-data-science.webp" target="_blank" rel="noopener"><img src="assets/img/certs/thiranex-data-science-thumb.webp" width="720" height="509" loading="lazy" alt="Thiranex certificate of achievement: Data Science internship"></a>
+          <div class="cert-body">
+            <span class="cert-issuer"><span class="dot"></span>Thiranex · ID THX-AUG0126-010</span>
+            <h3 class="cert-title">Data Science Internship</h3>
+            <div class="cert-foot"><span class="cert-date">Jul – Aug 2026</span><a class="link-arrow" href="https://www.thiranex.in/?verifyId=THX-AUG0126-010" target="_blank" rel="noopener">Verify <svg class="icon"><use href="assets/img/sprite.svg#i-arrow-up-right"/></svg></a></div>
+          </div>
+        </article>
+        <article class="card cert-card spotlight">
+          <a class="cert-thumb" href="assets/img/certs/thiranex-cyber-security.webp" target="_blank" rel="noopener"><img src="assets/img/certs/thiranex-cyber-security-thumb.webp" width="720" height="509" loading="lazy" alt="Thiranex certificate of achievement: Cyber Security internship"></a>
+          <div class="cert-body">
+            <span class="cert-issuer"><span class="dot"></span>Thiranex · ID THX-AUG2126-126</span>
+            <h3 class="cert-title">Cyber Security Internship</h3>
+            <div class="cert-foot"><span class="cert-date">Aug – Sep 2026</span><a class="link-arrow" href="https://www.thiranex.in/?verifyId=THX-AUG2126-126" target="_blank" rel="noopener">Verify <svg class="icon"><use href="assets/img/sprite.svg#i-arrow-up-right"/></svg></a></div>
+          </div>
+        </article>
+      </div>
+      <div class="sub-head"><h3>In progress</h3><p>Anthropic Academy · assessments pending</p></div>
+      <div class="progress-grid">
+        <div class="card progress-card"><svg class="icon" style="width:28px;height:28px;color:var(--accent)"><use href="assets/img/sprite.svg#b-claude"/></svg><div><h4>Claude Code in Action</h4><p>Anthropic Academy</p></div></div>
+        <div class="card progress-card"><svg class="icon" style="width:28px;height:28px;color:var(--accent)"><use href="assets/img/sprite.svg#b-claude"/></svg><div><h4>Building with the Claude API</h4><p>Anthropic Academy</p></div></div>
+        <div class="card progress-card"><svg class="icon" style="width:28px;height:28px;color:var(--accent)"><use href="assets/img/sprite.svg#b-modelcontextprotocol"/></svg><div><h4>Introduction to Model Context Protocol</h4><p>Anthropic Academy</p></div></div>
+        <div class="card progress-card"><svg class="icon" style="width:28px;height:28px;color:var(--accent)"><use href="assets/img/sprite.svg#b-modelcontextprotocol"/></svg><div><h4>MCP: Advanced Topics</h4><p>Anthropic Academy</p></div></div>
+        <div class="card progress-card"><svg class="icon" style="width:28px;height:28px;color:var(--accent)"><use href="assets/img/sprite.svg#b-aws"/></svg><div><h4>Claude with Amazon Bedrock</h4><p>Anthropic Academy</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow"><span class="num">04</span> Projects</span>
+        <h2 class="section-title">On <span class="serif gradient-text">GitHub</span></h2>
+      </div>
+      <div class="bento">
+        <a class="card bento-card spotlight" href="https://github.com/JaswanthTech99/offline-game" target="_blank" rel="noopener">
+          <span class="kicker"><svg class="icon"><use href="assets/img/sprite.svg#b-typescript"/></svg>Game · WebGPU</span>
+          <h3>SHATTERPOINT</h3>
+          <p>A first-person glass-corridor runner: three.js on WebGPU with a WebGL fallback, Rapier physics, offline-first PWA.</p>
+          <span class="link-arrow card-cta">View repo <svg class="icon"><use href="assets/img/sprite.svg#i-arrow-right"/></svg></span>
+        </a>
+        <a class="card bento-card spotlight" href="https://github.com/JaswanthTech99/Telco-Customer-Churn-Prediction" target="_blank" rel="noopener">
+          <span class="kicker"><svg class="icon"><use href="assets/img/sprite.svg#b-python"/></svg>Machine learning</span>
+          <h3>Telco Customer Churn Prediction</h3>
+          <p>Predicts which telecom customers are about to leave and turns that into a prioritised retention list.</p>
+          <span class="link-arrow card-cta">View repo <svg class="icon"><use href="assets/img/sprite.svg#i-arrow-right"/></svg></span>
+        </a>
+        <a class="card bento-card spotlight" href="https://github.com/JaswanthTech99/thiranex-data-science-internship" target="_blank" rel="noopener">
+          <span class="kicker"><svg class="icon"><use href="assets/img/sprite.svg#b-pandas"/></svg>Data science</span>
+          <h3>Data Science internship projects</h3>
+          <p>Four end-to-end projects on real UCI datasets: retail data cleaning, bank-marketing modelling, wine-quality EDA and heart-disease analytics.</p>
+          <span class="link-arrow card-cta">View repo <svg class="icon"><use href="assets/img/sprite.svg#i-arrow-right"/></svg></span>
+        </a>
+        <a class="card bento-card spotlight" href="https://github.com/JaswanthTech99/thiranex-cyber-security-internship" target="_blank" rel="noopener">
+          <span class="kicker"><svg class="icon"><use href="assets/img/sprite.svg#i-shield"/></svg>Cyber security</span>
+          <h3>Cyber Security internship projects</h3>
+          <p>A password-strength analyzer, a TLS vulnerability scanner, a phishing-email detector and a hardened Argon2id login system.</p>
+          <span class="link-arrow card-cta">View repo <svg class="icon"><use href="assets/img/sprite.svg#i-arrow-right"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIFE -->
+  <section id="life" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow"><span class="num">05</span> Beyond code</span>
+        <h2 class="section-title">What keeps me <span class="serif gradient-text">sharp</span></h2>
+      </div>
+      <div class="life-grid">
+        <article class="card life-card spotlight">
+          <div class="life-visual" aria-hidden="true"><svg class="icon" style="width:84px;height:84px;color:var(--accent)"><use href="assets/img/sprite.svg#i-dumbbell"/></svg></div>
+          <h3>Gym &amp; strength training</h3>
+          <p>Weightlifting is how I reset. Progressive overload teaches what good engineering does: small, consistent improvements compound.</p>
+        </article>
+        <article class="card life-card spotlight">
+          <div class="life-visual" aria-hidden="true"><svg class="icon" style="width:84px;height:84px;color:var(--accent-2)"><use href="assets/img/sprite.svg#i-trophy"/></svg></div>
+          <h3>Badminton</h3>
+          <p>Fast reflexes, footwork and strategy in every rally. My favourite way to stay active and unwind.</p>
+        </article>
+        <article class="card life-card spotlight">
+          <div class="life-visual" aria-hidden="true"><svg class="icon" style="width:84px;height:84px;color:var(--accent-3)"><use href="assets/img/sprite.svg#i-sparkles"/></svg></div>
+          <h3>Always learning AI</h3>
+          <p>Exploring Claude, the Model Context Protocol and retrieval-augmented generation (RAG), and bringing what works into everyday engineering.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="card contact-card">
+        <span class="eyebrow"><span class="num">06</span> Contact</span>
+        <h2 class="contact-title">Let's build something <span class="serif gradient-text">reliable</span> together.</h2>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:jaswanthkumartech@gmail.com"><svg class="icon"><use href="assets/img/sprite.svg#i-mail"/></svg>jaswanthkumartech@gmail.com</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/jaswanth-kumar-medisetti-83159b236" target="_blank" rel="noopener"><svg class="icon"><use href="assets/img/sprite.svg#b-linkedin"/></svg>LinkedIn</a>
+        </div>
+        <div class="contact-meta"><span><svg class="icon"><use href="assets/img/sprite.svg#i-map-pin"/></svg>Hyderabad, India</span><span><svg class="icon"><use href="assets/img/sprite.svg#i-briefcase-business"/></svg>On-site · Hybrid · Remote</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© 2026 Jaswanth Kumar Medisetti</span>
+    <span>Full version with animations and popups coming soon</span>
+  </div>
+</footer>
 </body>
 </html>
