@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jaswanth Kumar Medisetti – Full Stack .NET Engineer</title>
+<meta name="description" content="Portfolio of Jaswanth Kumar Medisetti, Full Stack .NET Engineer (C#, ASP.NET Core, Angular, PostgreSQL, AWS). Full site launching shortly.">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="dark">
+<style>
+  :root { --bg: #07080d; --ink: #f5f7ff; --muted: #9aa3b8; --a1: #6366f1; --a2: #22d3ee; --a3: #a855f7; }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { height: 100%; }
+  body {
+    display: grid; place-items: center; padding: 24px;
+    background: var(--bg); color: var(--ink); overflow: hidden;
+    font-family: ui-sans-serif, "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  }
+  .aurora { position: fixed; inset: -20%; filter: blur(70px); opacity: .55; pointer-events: none; }
+  .aurora span { position: absolute; width: 42vmax; height: 42vmax; border-radius: 50%; animation: drift 18s ease-in-out infinite alternate; }
+  .aurora span:nth-child(1) { background: radial-gradient(circle, var(--a1), transparent 65%); top: 10%; left: 12%; }
+  .aurora span:nth-child(2) { background: radial-gradient(circle, var(--a2), transparent 65%); bottom: 8%; right: 10%; animation-delay: -6s; }
+  .aurora span:nth-child(3) { background: radial-gradient(circle, var(--a3), transparent 65%); top: 40%; left: 45%; animation-delay: -11s; opacity: .7; }
+  @keyframes drift { to { transform: translate(6vmax, -4vmax) scale(1.12); } }
+  .grid { position: fixed; inset: 0; pointer-events: none; opacity: .35;
+    background-image: linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+    background-size: 56px 56px; mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%); }
+  main {
+    position: relative; width: min(560px, 100%); padding: 40px 32px; text-align: center;
+    border-radius: 24px; border: 1px solid rgba(255,255,255,.1);
+    background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+    backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
+    box-shadow: 0 30px 80px -30px rgba(0,0,0,.8), inset 0 1px 0 rgba(255,255,255,.08);
+    animation: rise .9s cubic-bezier(.2,.8,.2,1) both;
+  }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px) scale(.98); } }
+  .pill { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px;
+    font-size: 13px; color: var(--muted); border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.04); }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: #34d399; box-shadow: 0 0 0 0 rgba(52,211,153,.6); animation: ping 1.8s infinite; }
+  @keyframes ping { 70% { box-shadow: 0 0 0 8px rgba(52,211,153,0); } 100% { box-shadow: 0 0 0 0 rgba(52,211,153,0); } }
+  h1 { margin-top: 20px; font-size: clamp(30px, 6vw, 44px); line-height: 1.08; letter-spacing: -.02em; }
+  h1 em { font-style: normal; background: linear-gradient(90deg, var(--a2), var(--a1), var(--a3)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  p { margin-top: 12px; color: var(--muted); line-height: 1.6; }
+  a.btn { display: inline-flex; margin-top: 26px; padding: 12px 20px; border-radius: 12px; color: #fff; text-decoration: none; font-weight: 600;
+    background: linear-gradient(90deg, var(--a1), var(--a3)); box-shadow: 0 10px 30px -10px rgba(99,102,241,.7); transition: transform .2s, box-shadow .2s; }
+  a.btn:hover { transform: translateY(-2px); box-shadow: 0 16px 36px -12px rgba(99,102,241,.9); }
+  a.btn:focus-visible { outline: 2px solid var(--a2); outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="grid" aria-hidden="true"></div>
+  <main>
+    <span class="pill"><span class="dot" aria-hidden="true"></span>Portfolio launching shortly</span>
+    <h1>Jaswanth Kumar <em>Medisetti</em></h1>
+    <p>Full Stack .NET Engineer · C#, ASP.NET Core, Angular, PostgreSQL, AWS and AI-assisted development.<br>The full portfolio is being deployed. Check back in a little while.</p>
+    <a class="btn" href="mailto:jaswanthkumartech@gmail.com">Say hello</a>
+  </main>
+</body>
+</html>
